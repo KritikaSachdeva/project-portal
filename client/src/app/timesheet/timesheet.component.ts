@@ -12,7 +12,6 @@ import {
 } from "@ng-bootstrap/ng-bootstrap";
 
 import { TimesheetModal } from "./modal/modal.component";
-
 import { MatDialog } from "@angular/material/dialog";
 import { EmployeeService } from "../services/employee.service";
 import { SendHttpRequestService } from "../services/send-http-request.service";
@@ -39,7 +38,7 @@ export class TimesheetComponent implements OnInit {
   editField: string;
   timesheetList: any;
   closeResult: string;
-  page:number = 1;
+  page: number = 1;
   limit: number = 5;
   isSortDecreasing: boolean = false;
   role: string;
@@ -49,7 +48,6 @@ export class TimesheetComponent implements OnInit {
 
   empObjId: string;
   name = "Angular";
-  
   pageSize = 10;
   items = [];
   response: any;
